@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type=text/css href="lab1-es2.css">
+	<title>Esercizio 2</title>
+	<link href="/docs/5.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+	
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+   
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+
+
+<body>
+
+	<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel"> <!-- id fisso |||||||| carousel slide è il nome della classe |||||||data-bs-ride serve ad animare il carosselo, ovvero cambia automaticamente pagina dopo tot secondi -->
+    
+  <div class="carousel-indicators"> <!--classe che fa vedere la possibilità di scorrere tra le città-->
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="false" aria-label="Slide 1"></button> <!--class = "active" serve a far funzionare il carosello, quidni a scorrere i luoghi-->
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button> <!-- il contenuto di data-bs-target deve matchare con l'id ||| data-bs-slide-to mi permette di scorrere le slide ||| aria-label definisce una stringa che identifica l'elemento corrente -->
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+  </div>
+
+
+  <div class="carousel-inner">
+    <div class="carousel-item active"> <!--ci riferiamo alla prima slide e gli diciamo che mostra il carosello-->
+      <img src="img/Roma.jpg" class="d-block w-100 img-fluid " alt="..."> <!-- mettiamo il path dell'immagine. la class dice che la laghezza è 100, con fluid l'immagine si ridimensionerà in base alla larghezza della finestra. alt serve per mostarre il testo altenrativo nel caso che l'immagine non possa essere mostrata --> 
+      <div class="container"> <!-- classe per creare un contenitore -->
+          <div class="carousel-caption text-start"> <!-- con carousel-caption possiamo aggiungere delle didascalie e con text start gli diciamo di metterlo a sinistra-->
+            <h1>Roma</h1> <!-- scritta roma-->
+            <p><a class="btn btn-lg btn-primary" href="">previsioni</a></p> <!-- btn btn-lg btn-primary serve per la creazioen del bottone delle previsioni; in href ci dovrebbe essere il link alla pagina scelta e poi c'è il "nome" nel bottone, cioè titolo -->
+          </div>
+        </div>
+    </div>
+    <div class="carousel-item">
+      <img src="img/NewYork.jpg" class="d-block w-100 img-fluid  " alt="...">
+       <div class="container">
+          <div class="carousel-caption"> <!-- il testo va al centro -->
+            <h1>New York</h1>
+            <p><a class="btn btn-lg btn-primary" href="#">Browse gallery</a></p>
+          </div>
+        </div>
+    </div>
+    <div class="carousel-item">
+      <img src="img/HongKong.jpg" class="d-block w-100 img-fluid  " alt="...">
+       <div class="container">
+          <div class="carousel-caption text-end"> <!-- il testo va a destra -->
+            <h1>Hong Kong</h1>
+            <p><a class="btn btn-lg btn-primary" href="#">Browse gallery</a></p>
+          </div>
+        </div>
+    </div>
+    <div class="carousel-item">
+      <img src="img/bruxelles.jpg" class="d-block w-100 img-fluid  " alt="...">
+       <div class="container">
+          <div class="carousel-caption text-end">
+            <h1>Bruxelles</h1>
+            <p><a class="btn btn-lg btn-primary" href="#">Browse gallery</a></p>
+          </div>
+        </div>
+    </div>
+  </div>
+<!-- copia e incolla da bootstrap; rigurda la prima metà circa della pagina-->
+
+<!-- questi righe sono per i bottoni laterali da premere per cambiare slide -->
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev"> <!-- carousel-control-prev mi permette di scorrere indietro le slide |||data-bs-slide mi dice in che senso scorro quando premo -->
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span> <!-- carousel-control-prev-icon mostra il tasto per scorrere indietro le slide ||| aria-hidden = true non ho capito  -->
+    <span class="visually-hidden">Previous</span> <!-- non so cosa faccia -->
+    
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+
+
+<div class="row">
+    
+      <div class="col-lg-4"> <!-- lg identifica le dimensioni dell'immagine, mentre col 4 serve per dire che dividiamo la parte in 3 colonne   -->
+        <img src="img/Roma.jpg" class="img-circle"> <!-- path dell'immagine e con class img-circle mi arrotonda i bordi dell'immagine-->
+        <h2>Roma</h2> <!-- testo che viene messo sotto l'immagine in h2-->
+        <p>Some representative placeholder content for the three columns of text below the carousel. This is the first column.</p> <!-- paragrafo vhe viene messo sotto il testo in h2-->
+        <p><a class="btn btn-secondary" href="#">View details »</a></p>  <!--bottone che viene messo sotto il paragrafo. -->
+      </div><!-- /.col-lg-4 -->
+
+      <div class="col-lg-4">
+        <img src="img/NewYork.jpg" class="img-circle">
+        <h2>New York</h2>
+        <p>Another exciting bit of representative placeholder content. This time, we've moved on to the second column.</p>
+        <p><a class="btn btn-secondary" href="#">View details »</a></p>
+      </div><!-- /.col-lg-4 -->
+
+      <div class="col-lg-4">
+       <img src="img/HongKong.jpg" class="img-circle">
+        <h2>Hong Kong</h2>
+        <p>And lastly this, the third column of representative placeholder content.</p>
+        <p><a class="btn btn-secondary" href="#">View details »</a></p>
+      </div><!-- /.col-lg-4 -->
+
+      <!-- -->
+
+    </div>
+<body>
